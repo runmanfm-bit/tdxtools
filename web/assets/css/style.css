@@ -1,0 +1,457 @@
+/* 通达信选股工具 - 自定义CSS样式 */
+
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 主容器样式 */
+.main {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 标题样式 */
+.title {
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* 卡片样式 */
+.welcome-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #bae6fd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-card h2 {
+    color: #0369a1;
+    margin-bottom: 1rem;
+}
+
+.welcome-card p {
+    color: #475569;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* 功能卡片 */
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-card h3 {
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.feature-card p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.feature-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-card li {
+    color: #4b5563;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-card li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* 快速开始样式 */
+.quick-start {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.quick-start h3 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.quick-start ol {
+    padding-left: 1.5rem;
+    color: #4b5563;
+}
+
+.quick-start li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.quick-start strong {
+    color: #1d4ed8;
+}
+
+/* 数据源样式 */
+.data-sources {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.data-sources h3 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.source-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.source-item:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+.source-logo {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.source-info {
+    flex: 1;
+}
+
+.source-info strong {
+    display: block;
+    color: #1f2937;
+    font-size: 0.95rem;
+}
+
+.source-info small {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* 侧边栏样式 */
+.sidebar-header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 1rem;
+}
+
+.sidebar-header h3 {
+    color: #1f2937;
+    font-size: 1.25rem;
+}
+
+.sidebar-section {
+    padding: 0.5rem 0;
+}
+
+.sidebar-section h4 {
+    color: #4b5563;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-footer {
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+/* 按钮样式增强 */
+.stButton > button {
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 指标卡片样式 */
+[data-testid="stMetric"] {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+/* 警告和信息框样式 */
+.stAlert {
+    border-radius: 8px !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .sources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* 暗色主题支持 */
+@media (prefers-color-scheme: dark) {
+    .feature-card,
+    .quick-start,
+    .data-sources,
+    .welcome-card {
+        background: #1f2937;
+        border-color: #374151;
+    }
+    
+    .feature-card h3,
+    .quick-start h3,
+    .data-sources h3,
+    .welcome-card h2 {
+        color: #f9fafb;
+    }
+    
+    .feature-card p,
+    .quick-start li,
+    .feature-card li,
+    .welcome-card p {
+        color: #d1d5db;
+    }
+    
+    .source-item {
+        background: #374151;
+        border-color: #4b5563;
+    }
+    
+    .source-info strong {
+        color: #f9fafb;
+    }
+    
+    .source-info small {
+        color: #9ca3af;
+    }
+    
+    .sidebar-header h3 {
+        color: #f9fafb;
+    }
+    
+    .sidebar-section h4 {
+        color: #d1d5db;
+    }
+    
+    .sidebar-footer {
+        color: #9ca3af;
+        border-color: #374151;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-card,
+.feature-card,
+.quick-start,
+.data-sources {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* 加载动画 */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 工具提示样式 */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.85rem;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 代码块样式 */
+.code-block {
+    background: #1f2937;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+/* 表格样式增强 */
+.dataframe {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+.dataframe th {
+    background: #f8fafc !important;
+    font-weight: 600 !important;
+}
+
+/* 表单元素样式 */
+.stTextInput > div > div > input,
+.stSelectbox > div > div > select,
+.stNumberInput > div > div > input {
+    border-radius: 8px !important;
+    border: 1px solid #d1d5db !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stSelectbox > div > div > select:focus,
+.stNumberInput > div > div > input:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
